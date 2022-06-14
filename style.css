@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@500&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    background-color: gainsboro;
+    margin: auto;
+}
+header {
+    background-color: rgba(13, 95, 172,0.5);
+    padding: 5px 20px 30px 10px;
+    margin: auto;
+}
+
+header #image {
+    margin: auto auto;
+    width: 50%;
+    display: block;
+}
+
+header #home p {
+    font-size: smaller;
+    text-align: center;
+    font-style: italic;
+}
+header nav {
+    margin: 0px 30% 0px 30%;
+    display: flex;
+    justify-content: space-around;
+}
+h1 {
+    text-align: center;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0,0.4);
+    color: white;
+}
+.buttons{
+    border-radius: 5%;
+    border:black;
+    background-color: azure;
+}
