@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta: Música y Tristeza</title>
+    <link rel="stylesheet" href="css/styleform.css">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1 id="title">Encuesta: Música y 
+                <br>el sentimiento de tristeza</h1>
+            <p id="description">Cuál es la música que más escuchas cuando estás triste</p>
+        </header>
+        <form id="survey-form" action="">
+            <div class="form-group">
+                <label for="name" id="name-label">Por favor ingresa tu nombre <span class="required"> *</span></label>
+                <input type="text" id="name" placeholder="Nombre" required class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label">Por favor ingresa tu email <span class="required"> *</span></label>
+                <input type="email" id="email" placeholder="Email" required class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="number" id="number-label">Ingresa tu número de contacto <span class="clue">(Opcional)</span></label>
+                <input type="number" id="number" min="1000000" max="9999999" placeholder="Número de Contacto" class="form-control">    
+            </div>
+            <div class="form-group">
+                <p>Qué tipo de música prefieres escuchar cuando estás triste <span class="required">*</span></p>
+                <select name="typeofmusic" id="dropdown" class="form-control">
+                    <option value="Selecciona" selected disabled>Selecciona</option>
+                    <option value="beth">Beethoven</option>
+                    <option value="metal">Metallica</option>
+                    <option value="regg">Reggaeton</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>¿Por qué crees que escuchas música cuando estás triste? <span class="required">*</span></p>
+                <label>
+                    <input name="reason" type="radio" value="Me distrae" class="input-radio">
+                    Me distrae
+                </label>
+                <label>
+                    <input name="reason" type="radio" value="Me hace pensar" class="input-radio">
+                    Me hace pensar
+                </label>
+                <label>
+                    <input name="reason" type="radio" value="No lo sé" class="input-radio">
+                    No lo sé
+                </label>
+            </div>
+            <div class="form group">
+                <p>Por cuál de los siguientes canales escuchas música <span class="clue"> (Escoge uno o varios, según corresponda)</span></p>
+                <label>
+                    <input name="wayoflistening" type="checkbox" value="Audífonos" class="input-check">
+                    Audífonos
+                </label>
+                <label>
+                    <input name="wayoflistening" type="checkbox" value="Equipo de Sonido" class="input-check">
+                    Equipo de sonido (Microcomponente)
+                </label>
+                <label>
+                    <input name="wayoflistening" type="checkbox" value="Conciertos" class="input-check">
+                    Conciertos
+                </label>
+                <label>
+                    <input name="wayoflistening" type="checkbox" value="Radio" class="input-check">
+                    Radio
+                </label>
+            </div>
+            <div class="form group">
+                <p>¿Qué sientes cuando mezclas la música con tu sentimiento de tristeza?</p>
+                <textarea name="sentimientos" cols="30" rows="10" class="input-textarea" placeholder="Escribe tu respuesta aquí"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit">Envía tu respuesta</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
